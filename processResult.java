@@ -67,7 +67,7 @@ public class processResult extends Application{
             int c =(ff[i]+1)*7;
             gant[i].setMinHeight(40);
             gant[i].setMinWidth(c);
-            grid1.add(gant[i], i, 0,ff[i],1);
+            grid1.add(gant[i], i, 0,ff[i]+1,1);
             v += ff[i-1];
             Label label1 = new Label(Integer.toString(v));
             numric[i] = label1;
@@ -92,7 +92,6 @@ public class processResult extends Application{
         
         Label L1 = new Label("Process Name");
         Label L2 = new Label("Process Time Arraival");
-        //Label L3 = new Label("Process Burst Time");
         Label L4 = new Label("Process Time Compilation");
         Label L5 = new Label("Process Wait Time");
         grid.add(L1, 0, 1);
