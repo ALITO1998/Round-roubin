@@ -171,11 +171,12 @@ public class RRC {
         this.avgwtime=(float)res / nop;
         this.avgctime=(float)resc/ nop;
         this.gantChart=seq.split("->");
+        System.out.println("Sequence is like that " + seq); 
+
 //         System.out.println("Average waiting time is "
 //                           + (float)res / nop);
 //        System.out.println("Average compilation  time is "
 //                           + (float)resc / nop); 
-//        System.out.println("Sequence is like that " + seq); 
     }
 }
 
